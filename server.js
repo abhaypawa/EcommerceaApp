@@ -63,7 +63,7 @@ server.use(
 );
 server.use('/api/users', userRouter);
 
-serve.use('api/likes',jwtAuth, likeRouter)
+server.use('api/likes',jwtAuth, likeRouter)
 
 // 3. Default request handler
 server.get('/', (req, res) => {
